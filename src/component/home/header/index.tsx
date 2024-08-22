@@ -1,17 +1,24 @@
 import logo from "../../../assets/logo.png"
 import Button from "../../button";
+import { motion } from 'framer-motion';
 
 const HeaderHome = () => {
     return (
-        <section className="pt-12 w-full xl:max-w-widthPage lg:max-w-[1024px] md:max-w-[736px] px-8 md:px-0 mx-auto animate-fadeDown">
+        <motion.section
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true}}
+            className="pt-12 w-full xl:max-w-widthPage lg:max-w-[1024px] md:max-w-[736px] px-8 md:px-0 mx-auto"
+        >
             <header className="flex justify-between items-center">
                 <a href="#">
-                    <img src={logo} alt="logo" />
+                <img src={logo} alt="logo" />
                 </a>
-                <Button title="Sign In" padding="xl:pl-[81px] xl:pt-[18px] xl:pr-[68.7px] xl:pb-[15.63px] px-[30px] py-4"/>
-                <IConMenu className="lg:hidden size-6 cursor-pointer"/>
+                <Button title="Sign In" padding="xl:pl-[81px] xl:pt-[18px] xl:pr-[68.7px] xl:pb-[15.63px] px-[30px] py-4" />
+                <IConMenu className="lg:hidden size-6 cursor-pointer" />
             </header>
-        </section>
+        </motion.section>
     )
 }
 
