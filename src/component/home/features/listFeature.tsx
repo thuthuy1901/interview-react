@@ -36,11 +36,11 @@ const listFeature: featureState[] = [
         listStick: [
             {
                 src: stick1_1,
-                class: '',
+                class: 'right-4 top-4',
             },
             {
                 src: stick1_2,
-                class: '',
+                class: 'top-[43.21px] right-[115.59px]',
             }
         ]
     },
@@ -53,7 +53,7 @@ const listFeature: featureState[] = [
         listStick: [
             {
                 src: stick2,
-                class: '',
+                class: 'bottom-[44px] right-[25px]',
             }
         ]
     },
@@ -66,7 +66,7 @@ const listFeature: featureState[] = [
         listStick: [
             {
                 src: stick3,
-                class: '',
+                class: 'top-[21.67px] right-[22.61px]',
             },
         ]
     },
@@ -79,11 +79,11 @@ const listFeature: featureState[] = [
         listStick: [
             {
                 src: stick4_1,
-                class: '',
+                class: 'right-[63.73px] top-[25px]',
             },
             {
                 src: stick4_2,
-                class: '',
+                class: 'right-[24px] bottom-[57px]',
             }
         ]
     },

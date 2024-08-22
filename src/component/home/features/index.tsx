@@ -6,8 +6,8 @@ const FeaturesHome = () => {
             <h2 className="text-header font-bold text-[40px] leading-[52px]">
                 Features
             </h2>
-            <p className="text-text font-medium text-lg max-w-[575.12px] text-center mt-[49.24px]">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
-            <div className="w-full mt-[68.94px] grid grid-cols-2 grid-rows-2">
+            <p className="text-text font-medium text-lg max-w-[575.12px] text-center xl:mt-[49.24px] mt-6">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
+            <div className="w-full mt-[68.94px] grid xl:grid-cols-2 grid-cols-1 justify-items-center">
                 <ListFeature />
             </div>
         </section>
