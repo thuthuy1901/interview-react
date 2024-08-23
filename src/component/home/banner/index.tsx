@@ -9,7 +9,7 @@ const BannerHome = () => {
                 <motion.div 
                     initial={{ opacity: 0, y: -100 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 2, ease: "easeInOut" }}
                     viewport={{ once: true}}
                     className="xl:max-w-[641px] w-full xl:block flex flex-col items-center"
                 >
@@ -24,7 +24,7 @@ const BannerHome = () => {
                 <motion.div 
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 2, ease: "easeInOut" }}
                     viewport={{ once: true}}
                     className="xl:absolute right-0 bottom-[-35.78px] xl:mt-0 mt-8 xl:block flex justify-center w-full xl:w-fit"
                 >

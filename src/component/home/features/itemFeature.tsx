@@ -8,10 +8,23 @@ type ItemFeatureProps = {
 
 const ItemFeature = (props: ItemFeatureProps) => {
     const {item} = props;
+    const time = 0.5 * item.id;
     return (
-        <div className="w-full max-w-[523.21px] h-[382.1px] relative xl:block flex flex-col items-center">
-            <img 
-                className={`xl:absolute left-0 xl:w-[232px] w-[120px] ${item.class}`}
+        <motion.div 
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 2 + time, ease: "easeInOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+            className="w-full max-w-[523.21px] h-[382.1px] relative xl:block flex flex-col items-center"
+        >
+            <motion.img 
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0 }}
+                transition={{ duration: 1 + time, ease: "easeInOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+                className={`xl:absolute left-0 z-10 xl:w-[232px] w-[120px] ${item.class}`}
                 src={item.img} 
                 alt={item.title} 
             />
@@ -22,6 +35,7 @@ const ItemFeature = (props: ItemFeatureProps) => {
             />
             {item.listStick.map((itemStick) => (
                 <img 
+                    key={itemStick.src}
                     src={itemStick.src} 
                     alt={itemStick.src} 
                     className={`absolute ${itemStick.class} hidden xl:block`} 
@@ -35,7 +49,7 @@ const ItemFeature = (props: ItemFeatureProps) => {
                     <img src={arrowRight} alt="arrowRight" />
                 </a>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

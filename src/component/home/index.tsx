@@ -1,6 +1,7 @@
 import BannerHome from "./banner";
 import FeaturesHome from "./features";
 import HeaderHome from "./header";
+import SliceHome from "./slice";
 
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
             <HeaderHome />
             <BannerHome />
             <FeaturesHome />
+            <SliceHome />
         </>
     )
 }

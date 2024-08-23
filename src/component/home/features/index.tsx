@@ -8,7 +8,7 @@ const FeaturesHome = () => {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -100 }}
-                transition={{ duration: 0.8, ease: "easeInOut" }}
+                transition={{ duration: 2, ease: "easeInOut" }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="text-header font-bold text-[40px] leading-[52px]"
             >
@@ -18,7 +18,7 @@ const FeaturesHome = () => {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -100 }}
-                transition={{ duration: 0.8, ease: "easeInOut" }}
+                transition={{ duration: 2, ease: "easeInOut" }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="text-text font-medium text-lg max-w-[575.12px] text-center xl:mt-[49.24px] mt-6"
             >
