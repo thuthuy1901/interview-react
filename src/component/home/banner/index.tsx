@@ -1,5 +1,5 @@
 import Button from "../../button";
-import bannerHeader from "../../../assets/banner_header.png";
+import bannerHeader from "@assets/banner_header.png";
 import { motion } from 'framer-motion';
 
 const BannerHome = () => {

@@ -2,6 +2,7 @@ import ListFeature from "./listFeature";
 import { motion } from 'framer-motion';
 
 const FeaturesHome = () => {
+
     return (
         <section className="pt-[164.29px] w-full max-w-widthPage mx-auto flex flex-col items-center">
             <motion.h2 

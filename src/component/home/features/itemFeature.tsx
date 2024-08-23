@@ -1,5 +1,5 @@
 import { featureState } from "./listFeature";
-import arrowRight from "../../../assets/arrowRight.png";
+import arrowRight from "@assets/arrowRight.png";
 import { motion } from 'framer-motion';
 
 type ItemFeatureProps = {

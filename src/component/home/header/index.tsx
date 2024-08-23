@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo.png"
+import logo from "@assets/logo.png";
 import Button from "../../button";
 import { motion } from 'framer-motion';
 

@@ -1,5 +1,6 @@
 import BannerHome from "./banner";
 import FeaturesHome from "./features";
+import FooterHome from "./footer";
 import HeaderHome from "./header";
 import SliceHome from "./slice";
 
@@ -10,6 +11,7 @@ const HomePage = () => {
             <BannerHome />
             <FeaturesHome />
             <SliceHome />
+            <FooterHome />
         </>
     )
 }
