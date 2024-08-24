@@ -8,8 +8,10 @@ export default {
       },
       colors: {
         purple: '#9C69E2',
+        purpleShadow: '#8a56db',
         header: '#212353',
         text: '#4B5D68',
+        blink: '#F063B8',
       },
       borderRadius: {
         button: '50px',

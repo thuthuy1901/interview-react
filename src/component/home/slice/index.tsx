@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ListGallery from "./listGallery";
+import { motion } from 'framer-motion';
 
 export type TypeGallergy = {
     id: string,
@@ -32,10 +33,17 @@ const SliceHome = () => {
     
     return (
         !loading && 
-            <section className="mt-[120px] w-full max-w-widthPage mx-auto bg-purple rounded-[50px] py-[110px] pl-[93.17px] pr-[95.17px] overflow-hidden relative">
+            <motion.section 
+                initial={{ opacity: 0, y: -200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -200 }}
+                transition={{ duration: 2, ease: "easeInOut" }}
+                viewport={{ once: false, amount: 0.2 }}
+                className="mt-[120px] w-full xl:max-w-widthPage lg:max-w-[1024px] md:max-w-[736px] mx-auto bg-purple rounded-[50px] py-[110px] xl:pl-[93.17px] xl:pr-[95.17px] px-2 overflow-hidden relative"
+            >
                 <h2 className="text-[40px] leading-[52px] font-bold text-left text-white mb-[88.16px]">Testimonials</h2>
                 <ListGallery galleries={galleries}/>
-            </section>
+            </motion.section>
     )
 }
 
