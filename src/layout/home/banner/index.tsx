@@ -1,4 +1,4 @@
-import Button from "../../button";
+import Button from "../../../component/button";
 import bannerHeader from "@assets/banner_header.png";
 import { motion } from 'framer-motion';
 

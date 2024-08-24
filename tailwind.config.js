@@ -12,6 +12,7 @@ export default {
         header: '#212353',
         text: '#4B5D68',
         blink: '#F063B8',
+        gray: '#D9D9D9',
       },
       borderRadius: {
         button: '50px',

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ListGallery from "./listGallery";
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 export type TypeGallergy = {
     id: string,
@@ -15,12 +16,8 @@ const SliceHome = () => {
     useEffect(() => {
         const fetchGalleries = async () => {
             try {
-                const response = await fetch('https://api-test-web.agiletech.vn/galleries');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = await response.json();
-                setGalleries(data); 
+                const response = await axios.get('https://api-test-web.agiletech.vn/galleries');
+                setGalleries(response.data); 
             } catch (error) {
                 console.log(error);
             } finally {
