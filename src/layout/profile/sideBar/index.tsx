@@ -12,7 +12,7 @@ const SideBar = () => {
     }
 
     return (
-        <section className="bg-gray w-[320px] min-h-screen">
+        <section className="bg-gray w-[320px] min-h-screen hidden lg:block">
             <Link to="/">
                 <img src={logo} alt="logo" className="pt-[30px] pl-[100px]"/>
             </Link>
